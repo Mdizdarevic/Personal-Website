@@ -1,12 +1,18 @@
-/* Home */
 #home{
   background: rgb(0, 101, 219);
-  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%);
-  min-height: 500px;
+  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
+  background-image: url('https://www.yoh.com/hs-fs/hubfs/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home.jpeg?width=700&name=Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home.jpeg');
+  background-size: cover;
+  min-height: 750px;
+  margin-top: 60px;
+}
+#about, #contact, #service{
+  background-color: white;
+  color: black;
 }
 
-/* Cards */
 .card{
+  color: black;
   transition: all 0.5s ease;
 }
 .card:hover{
@@ -14,14 +20,31 @@
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
-/* Form */
 .form{
-  background: rgb(0, 101, 219);
+  color: rgb(0, 101, 219);
   background: linear-gradient(90deg, rgb(0,101,219) 30%, rgba(0, 212, 255, 1) 100%);
 }
 
-/* Footer */
 .footer{
   background: rgb(0, 101, 219);
-  background: linear-gradient(90deg, rgb(0,101,219) 40%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
+}
+
+.navbar{
+  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%);
+}
+
+.navbar-brand{
+  font-size: 22px;
+  color: white !important;
+}
+
+.navbar li a{
+  float: right !important;
+  color: white;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-danger-primary {
+  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
+  color: white !important;
 }
