@@ -1,50 +1,252 @@
-#home{
-  background: rgb(0, 101, 219);
-  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
-  background-image: url('https://www.yoh.com/hs-fs/hubfs/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home.jpeg?width=700&name=Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home.jpeg');
+.home {
+  top: -150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( /Users/moren/WebDev/personal-website/src/pleasework.jpg);
   background-size: cover;
-  min-height: 750px;
-  margin-top: 60px;
+  background-repeat: no-repeat;
+  min-height: 960px;
+  margin-top: -120px;
 }
-#about, #contact, #service{
-  background-color: white;
-  color: black;
+
+.Typewriter{
+  font-family: monospace;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.Typewriter:hover {
+  color: rgb(73, 213, 213);
+}
+
+.col-11 p:hover{
+  color: rgb(73, 213, 213);
+}
+
+.col-12 p:hover {
+  color: rgb(73, 213, 213);
+}
+
+.column_center {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 800px;
+  color: aliceblue;
+  background-color: rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 851px){
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url( /Users/moren/WebDev/personal-website/src/pleasework.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+}
+
+#about, #contact, #projects{
+  background-color: rgb(19, 17, 17);
+  color: white;
+  margin-top: -50px;
+}
+
+#about {
+  margin-top: -50px;
+  margin-bottom: -20px;
+}
+
+#projects {
+  margin-top: 20px;
 }
 
 .card{
   color: black;
   transition: all 0.5s ease;
+  font-family: monospace;
 }
-.card:hover{
-  cursor: pointer;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
 
-.form{
-  color: rgb(0, 101, 219);
-  background: linear-gradient(90deg, rgb(0,101,219) 30%, rgba(0, 212, 255, 1) 100%);
+.card:hover{
+  cursor: pointer;
+  box-shadow: 1rem 1rem rgba(0, 0, 0, 0.476);
+  background-color: rgb(73, 213, 213);
+  transform: scale(1.1);
 }
 
 .footer{
-  background: rgb(0, 101, 219);
-  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(28, 38, 57) 70.2%);
+  margin-top: -100px;
 }
 
-.navbar{
-  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%);
+.hr {
+  width: 175px;
+  height: 1px;
+  border: 1px solid rgb(32, 38, 57);
+  background-color: rgb(32, 38, 57);
+  display: block;
 }
 
-.navbar-brand{
-  font-size: 22px;
-  color: white !important;
+.header {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: .3s ease-in;
+  overflow: hidden;
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(28, 38, 57) 70.2%);
+  box-shadow: 0.8rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
-.navbar li a{
-  float: right !important;
+.header-bg {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57, 0.9) 11.4%, rgb(28, 38, 57, 0.9) 70.2%);
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.header .nav-menu a {
   color: white;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-danger-primary {
-  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 100%); 
+.header .navbar-brand {
   color: white !important;
+  margin-top: -10px;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.header .navbar img {
+  position: sticky;
+  margin-top: 10px;
+  color: rgb(73, 213, 213);
+}
+
+.header .nav-menu {
+  display: flex;
+}
+
+.header .nav-item {
+  padding: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.header .nav-item:hover {
+  padding-bottom: 12px;
+  background-color: rgb(73, 213, 213);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width:940px) {
+  .header {
+      max-width: 100%;
+      background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(28, 38, 57) 70.2%);
+    }
+
+  .header .navbar {
+      max-width: 100%;
+  }
+
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      flex-direction: column;
+      background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(28, 38, 57) 70.2%);
+      width: 100%;
+      height: 36vh;
+      text-align: center;
+      transition: .3s;
+  }
+
+  .nav-menu.active {
+      left: 0;
+      display: flex;
+  }
+
+  .nav-item {
+      margin: 0.5rem;
+  }
+
+  .header .navbar img {
+    position: sticky;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    font-size: 25px;
+    color: white;
+  }
+
+  .hamburger:hover {
+    color: rgb(73, 213, 213);
+  }
+}
+
+.fa:hover, .container .nav-link:hover {
+  color: rgb(73, 213, 213);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-danger-primary {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(28, 38, 57) 70.2%);
+  color: white !important;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 50px;
+  background: linear-gradient(112.1deg, rgb(32, 38, 57, 0.9) 11.4%, rgb(28, 38, 57, 0.9) 70.2%);
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+.back-to-top:hover {
+  box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  color: rgb(73, 213, 213);
+  transform: scale(1.1);
+}
+
+.down-to-about {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  background: transparent;
+  z-index: 1;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+.down-to-about:hover {
+  color: rgb(73, 213, 213);
 }
